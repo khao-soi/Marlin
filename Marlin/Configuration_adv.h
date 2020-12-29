@@ -173,11 +173,12 @@
 // If the machine is idle and the temperature over MINTEMP
 // then extrude some filament every couple of SECONDS.
 //#define EXTRUDER_RUNOUT_PREVENT
-#if ENABLED(EXTRUDER_RUNOUT_PREVENT)
-  #define EXTRUDER_RUNOUT_MINTEMP 190
-  #define EXTRUDER_RUNOUT_SECONDS 30
-  #define EXTRUDER_RUNOUT_SPEED 1500  // mm/m
-  #define EXTRUDER_RUNOUT_EXTRUDE 5   // mm
+#if ENABLED(EXTRUDER_RUNOUT_PREVENT) // TODO: is enabled in orig - enable?
+  #define EXTRUDER_RUNOUT_MINTEMP 190  
+  #define EXTRUDER_RUNOUT_SECONDS 30.
+  #define EXTRUDER_RUNOUT_ESTEPS 14. //mm filament
+  #define EXTRUDER_RUNOUT_SPEED 1500.  //extrusion speed
+  #define EXTRUDER_RUNOUT_EXTRUDE 100
 #endif
 
 // @section temperature
