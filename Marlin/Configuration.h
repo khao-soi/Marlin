@@ -409,9 +409,14 @@
   //#define DEFAULT_Kd 440
 
   // Anycubic Kossel - run 'M106 S255' & 'M303 E0 C10 S200'
-  #define DEFAULT_Kp 22.36
-  #define DEFAULT_Ki 1.63
-  #define DEFAULT_Kd 76.48
+  //#define DEFAULT_Kp 22.36
+  //#define DEFAULT_Ki 1.63
+  //#define DEFAULT_Kd 76.48
+
+  // UltiBots 40W / 24V heater cartridge
+  #define  DEFAULT_Kp 18.62
+  #define  DEFAULT_Ki 1.37
+  #define  DEFAULT_Kd 63.14  
 
 #endif // PIDTEMP
 
