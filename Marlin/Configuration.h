@@ -786,9 +786,9 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
  * value set here, it may happen instantaneously.
  */
 #define DEFAULT_XJERK                 5.0
-#define DEFAULT_YJERK                 DEFAULT_XJERK
-#define DEFAULT_ZJERK                 DEFAULT_XJERK // Must be same as XY for delta
-#define DEFAULT_EJERK                 DEFAULT_XJERK
+#define DEFAULT_YJERK                 2.0
+#define DEFAULT_ZJERK                 2.0// Must be same as XY for delta
+#define DEFAULT_EJERK                 2.5
 
 /**
  * S-Curve Acceleration
