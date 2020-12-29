@@ -432,6 +432,9 @@
  * heater. If your configuration is significantly different than this and you don't understand
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  */
+
+#define PID_dT ((16.0 * 8.0)/(F_CPU / 64.0 / 256.0)) //sampling period of the temperature routine
+
 #if ANYCUBIC_KOSSEL_ENABLE_BED > 0
   #define PIDTEMPBED
 #endif
