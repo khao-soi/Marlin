@@ -26,8 +26,8 @@
 // normal size or plus?
 //#define ANYCUBIC_KOSSEL_PLUS
 
-// Anycubic Probe version 1 or 2 see README.md; 0 for no probe
-#define ANYCUBIC_PROBE_VERSION 0
+// Anycubic Probe version 1 or 2 see README.md; FSR 3; 0 for no probe
+#define ANYCUBIC_PROBE_VERSION 3
 
 // Heated Bed:
 // 0 ... no heated bed
@@ -913,8 +913,10 @@
   #define Z_PROBE_OFFSET_FROM_EXTRUDER 0     // Z offset: -below +above  [the nozzle]
 #elif ANYCUBIC_PROBE_VERSION == 1
   #define Z_PROBE_OFFSET_FROM_EXTRUDER -19.0 // Z offset: -below +above  [the nozzle]
-#else
+#elif ANYCUBIC_PROBE_VERSION == 2
   #define Z_PROBE_OFFSET_FROM_EXTRUDER -16.8 // Z offset: -below +above  [the nozzle]
+#else
+  #define Z_PROBE_OFFSET_FROM_EXTRUDER 0 // Z offset: 0  [FSR]
 #endif
 
 // Certain types of probes need to stay away from edges
