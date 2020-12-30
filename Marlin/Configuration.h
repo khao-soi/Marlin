@@ -609,7 +609,7 @@
     // Center-to-center distance of the holes in the diagonal push rods.
     #define DELTA_DIAGONAL_ROD 288.0 // mm
     // Horizontal distance bridged by diagonal push rods when effector is centered.
-    #define DELTA_RADIUS 171.5 //mm  Get this value from auto calibrate
+    #define DELTA_RADIUS 183.97 //mm  Get this value from auto calibrate
   #endif
 
   // height from z=0 to home position
