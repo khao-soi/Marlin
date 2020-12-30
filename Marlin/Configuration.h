@@ -615,7 +615,7 @@
   // height from z=0 to home position
   #define DELTA_HEIGHT 320.00 // get this value from auto calibrate
 
-  #define DELTA_ENDSTOP_ADJ { 0.0, 0.0, 0.0 } // get these from auto calibrate
+  #define DELTA_ENDSTOP_ADJ { -0.29, +0.00, -1.82  } // get these from auto calibrate
 
   // Trim adjustments for individual towers
   // tower angle corrections for X and Y tower / rotate XYZ so Z tower angle = 0
