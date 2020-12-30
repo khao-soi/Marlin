@@ -613,7 +613,7 @@
   #endif
 
   // height from z=0 to home position
-  #define DELTA_HEIGHT 320.00 // get this value from auto calibrate
+  #define DELTA_HEIGHT 253.15 // get this value from auto calibrate
 
   #define DELTA_ENDSTOP_ADJ { -0.29, +0.00, -1.82  } // get these from auto calibrate
 
