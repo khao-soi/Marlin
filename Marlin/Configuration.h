@@ -439,8 +439,7 @@
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  */
 
-// TODO: also defined in temperature.h
-//#define PID_dT ((16.0 * 8.0)/(F_CPU / 64.0 / 256.0)) //sampling period of the temperature routine
+#define PID_dT ((16.0 * 8.0)/(F_CPU / 64.0 / 256.0)) //sampling period of the temperature routine
 
 #if ANYCUBIC_KOSSEL_ENABLE_BED > 0
   #define PIDTEMPBED
@@ -1092,6 +1091,10 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 #define Y_MIN_POS -120
 #define Z_MAX_POS MANUAL_Z_HOME_POS
 #define Z_MIN_POS 0
+
+#define X_MAX_LENGTH (X_MAX_POS - X_MIN_POS)
+#define Y_MAX_LENGTH (Y_MAX_POS - Y_MIN_POS)
+#define Z_MAX_LENGTH (Z_MAX_POS - Z_MIN_POS)
 
 /**
  * Software Endstops
