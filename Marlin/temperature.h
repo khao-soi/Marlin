@@ -109,7 +109,8 @@ enum ADCSensorState : char {
 
 #if HAS_PID_HEATING
   #define PID_K2 (1.0f-PID_K1)
-  #define PID_dT ((OVERSAMPLENR * float(ACTUAL_ADC_SAMPLES)) / (F_CPU / 64.0f / 256.0f))
+  //#define PID_dT ((OVERSAMPLENR * float(ACTUAL_ADC_SAMPLES)) / (F_CPU / 64.0f / 256.0f))
+  #define PID_dT ((16.0 * 8.0)/(F_CPU / 64.0 / 256.0)) //sampling period of the temperature routine
 
   // Apply the scale factors to the PID values
   #define scalePID_i(i)   ( (i) * float(PID_dT) )
