@@ -343,9 +343,9 @@
 #define MAX_REDUNDANT_TEMP_SENSOR_DIFF 10
 
 // Extruder temperature must be close to target for this long before M109 returns success
-#define TEMP_RESIDENCY_TIME 3  // orig: 10 (seconds)
-#define TEMP_HYSTERESIS 5       // orig: 3 (degC) range of +/- temperatures considered "close" to the target one
-#define TEMP_WINDOW     5       // orig: 1 (degC) Window around target to start the residency timer x degC early.
+#define TEMP_RESIDENCY_TIME 10  // 10 (seconds)
+#define TEMP_HYSTERESIS 3       // 3 (degC) range of +/- temperatures considered "close" to the target one
+#define TEMP_WINDOW     1       // 1 (degC) Window around target to start the residency timer x degC early.
 
 // Bed temperature must be close to target for this long before M190 returns success
 #define TEMP_BED_RESIDENCY_TIME 10  // (seconds)
