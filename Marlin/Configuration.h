@@ -415,9 +415,14 @@
   //#define DEFAULT_Kd 76.48
 
   // UltiBots 40W / 24V heater cartridge
-  #define  DEFAULT_Kp 18.62
-  #define  DEFAULT_Ki 1.37
-  #define  DEFAULT_Kd 63.14  
+  //#define  DEFAULT_Kp 18.62
+  //#define  DEFAULT_Ki 1.37
+  //#define  DEFAULT_Kd 63.14  
+
+  // Kossel 250
+  #define DEFAULT_Kp 16.65
+  #define DEFAULT_Ki 1.03
+  #define DEFAULT_Kd 67.18
 
 #endif // PIDTEMP
 
